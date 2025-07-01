@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "IG Reels Alert Counter",
+  "version": "1.0",
+  "description": "計算您在 Instagram 上看了多少 Reels 以及花了多少時間。",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["counter.css"]
+    }
+  ]
+}
